@@ -1,0 +1,19 @@
+{
+  "name": "mns-javascript-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BastienBiblocque/MNS-Javascript-Exam.git"
+  },
+  "author": "Bastien Biblocque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BastienBiblocque/MNS-Javascript-Exam/issues"
+  },
+  "homepage": "https://github.com/BastienBiblocque/MNS-Javascript-Exam#readme"
+}
