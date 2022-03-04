@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/BastienBiblocque/MNS-Javascript-Exam/issues"
   },
-  "homepage": "https://github.com/BastienBiblocque/MNS-Javascript-Exam#readme"
+  "homepage": "https://github.com/BastienBiblocque/MNS-Javascript-Exam#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
 }
