@@ -70,14 +70,16 @@ fetch(url, options)
     const allDeleteButton = document.querySelectorAll('.delete');
     allDeleteButton.forEach(function(currentBtn){
         currentBtn.addEventListener('click', (e)=>{
-            let id;
-            if (e.target.id.length === 0 ){
-                let parentNode = e.target.parentNode;
-                id = parentNode.parentNode.id;
-            } else {
-                id = e.target.id;
+            if (confirm("Voulez vous vraiment supprimer ?")) {
+                let id;
+                if (e.target.id.length === 0 ){
+                    let parentNode = e.target.parentNode;
+                    id = parentNode.parentNode.id;
+                } else {
+                    id = e.target.id;
+                }
+                deleted(id);
             }
-            deleted(id);
         })
     })
     }).then(()=>{
