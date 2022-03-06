@@ -57,12 +57,10 @@ app.put('/data/:id', (req, res) => {
     if (index === -1) {
         return res.status(404).send('Product not found')
     }
-    const updatedProduct = {
+    Data[index] = {
         id: Data[index].id,
-        name: req.body.name,
-        price: req.body.price
+        name: req.body.name
     }
-    Data[index] = updatedProduct
     res.status(200).json('Product updated')
 })
 
