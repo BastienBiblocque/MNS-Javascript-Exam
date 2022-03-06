@@ -16,7 +16,6 @@ fetch(url, options)
         }
     })
     .then((response) => {
-        console.log(response)
         nameDisplay.innerText = response.name;
         countryDisplay.innerText = response.pays;
     })
