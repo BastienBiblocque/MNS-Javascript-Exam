@@ -1,5 +1,6 @@
 let inputName = document.querySelector('#inputName');
 let buttonSendForm = document.querySelector('#buttonSendForm');
+let alert_banner = document.querySelector('#alert_banner');
 
 buttonSendForm.addEventListener('click',update);
 
@@ -53,6 +54,9 @@ function update () {
             }
         })
         .then((response) => {
-            console.log(response);
+            alert_banner.classList.remove('hidden');
+            setTimeout(()=>{
+                alert_banner.classList.add('hidden');
+            }, 2000);
         })
 }

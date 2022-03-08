@@ -35,7 +35,6 @@ function post () {
                 }
             })
             .then((response) => {
-                console.log(response);
                 alert_banner.classList.remove('hidden');
                 setTimeout(()=>{
                     alert_banner.classList.add('hidden');
