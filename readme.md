@@ -3,6 +3,10 @@
 
 Le CRUD est fonctionnel, sur la pages d'accueil il y'a la liste de tout les items dans la DB avec toutes les actions possible ( voir un item, le modifiié et le supprimé.
 
+
+##Lancement 
+```nodemon start```
+
 ## Info supplémentaire
 
 - La météo est fonctionnel, en utilisant votre géolocalisation ou en mettant la ville de votre choix dans l'input (la recherche est automatique lorsque l'on clique en dehors de l'input)
