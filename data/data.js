@@ -1,23 +1,23 @@
 const srcData = [
     {
-        name: 'Rick et morty',
-        pays: 'USA',
+        name: 'Code Lyoko',
+        pays: 'France',
         id: '1',
     }, {
-        name: 'L\'attaque des titans - Shingeki no Kyojin',
-        pays: 'Japon',
+        name: 'Wakfu',
+        pays: 'France',
         id: '2',
     }, {
-        name: 'Archer',
-        pays: 'USA',
+        name: 'Pokémon',
+        pays: 'Japon',
         id: '3',
     }, {
-        name: 'Assassination Classroom - Ansatsu Kyoshitsu',
-        pays: 'Japon',
+        name: "Bob l'éponge",
+        pays: 'USA',
         id: '4',
 
     }, {
-        name: 'Paradise Police',
+        name: 'Arcane',
         pays: 'USA',
         id: '5',
     }

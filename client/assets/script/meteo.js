@@ -62,7 +62,6 @@ function displayDate(data){
     loader.style.display = 'none';
     displayDegree.style.display = 'block';
     displayDegree.innerHTML = `Il fait ${data.main.temp} degrès`;
-
 }
 
 

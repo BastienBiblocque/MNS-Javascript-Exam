@@ -1,4 +1,5 @@
 let inputName = document.querySelector('#inputName');
+let inputPays = document.querySelector('#inputPays');
 let buttonSendForm = document.querySelector('#buttonSendForm');
 let alert_banner = document.querySelector('#alert_banner');
 
@@ -11,7 +12,7 @@ function post () {
         inputName.classList.remove('border-red-600');
         let tmp = {
             name: inputName.value,
-            pays: 'UK',
+            pays: inputPays.value,
             id: Date.now().toString(),
         };
 
