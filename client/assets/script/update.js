@@ -1,4 +1,6 @@
 let inputName = document.querySelector('#inputName');
+let inputPays = document.querySelector('#inputPays');
+
 let buttonSendForm = document.querySelector('#buttonSendForm');
 let alert_banner = document.querySelector('#alert_banner');
 
@@ -11,8 +13,6 @@ let options = {
     method: 'get'
 }
 
-console.log(idToUpdate);
-
 
 fetch(url, options)
     .then((res) => {
@@ -21,17 +21,18 @@ fetch(url, options)
         }
     })
     .then((response) => {
-        console.log(response);
         inputName.value = response.name;
+        inputPays.value = response.pays;
     })
 
 
 
-
+//on patch notre item avec la méthode PUT
 function update () {
+    console.log(inputPays.value);
     let tmp = {
         name: inputName.value,
-        pays: 'UK',
+        pays: inputPays.value,
         id: Date.now().toString(),
     };
 

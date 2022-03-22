@@ -6,3 +6,5 @@ buttonHome.addEventListener('click',()=>{navigateTo('/')});
 function navigateTo(url){
     window.location = url;
 }
+
+//navigation de base

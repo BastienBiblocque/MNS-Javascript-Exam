@@ -1,9 +1,9 @@
 let app = require('express')()
 
 app.use(require('express').json());
-
+// liste des routes pour aller chercher des vues ou des données
 app.listen(3000,()=>{
-    console.log('Server lancé mon gars ');
+    console.log('Server lancé');
 });
 
 app.get('/', (req,res) => {
@@ -28,7 +28,6 @@ app.get('/data', (req,res) => {
 app.post('/data', (req,res) => {
     Data.push(req.body);
     res.send(Data);
-    console.log(req.body)
 })
 
 app.get('/data/:id', (req, res) => {
@@ -52,14 +51,14 @@ app.delete('/delete/:id', (req, res) => {
 
 app.put('/data/:id', (req, res) => {
     const id = req.params.id;
-    console.log(id)
     const index = Data.findIndex(product => product.id === id)
     if (index === -1) {
         return res.status(404).send('Product not found')
     }
     Data[index] = {
         id: Data[index].id,
-        name: req.body.name
+        name: req.body.name,
+        pays: req.body.pays,
     }
     res.status(200).json('Product updated')
 })

@@ -23,7 +23,7 @@ function getCurrentWeather(){
 }
 
 
-
+// on utilise l'api du gouvernement pour aller get les coordonées lat et long a partir d'un nom de ville
 function doSearchCity(name){
     fetch(`https://api-adresse.data.gouv.fr/search/?q=${name}`, {
         method: "GET",
@@ -40,7 +40,7 @@ function doSearchCity(name){
             console.error(err);
         });
 }
-
+//avec lat let long on fait une recherche sur openweather pour get la temperature en temps réel
 function doSearchWeather(lat, lon){
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=97286d65d445e76a11d157f733681e46&units=metric`, {
         method: "GET",
@@ -58,6 +58,7 @@ function doSearchWeather(lat, lon){
         });
 }
 
+// puis on affiche la temperature
 function displayDate(data){
     loader.style.display = 'none';
     displayDegree.style.display = 'block';

@@ -5,6 +5,8 @@ let options = {
 
 let containerListe = document.querySelector('#liste');
 
+//ici toutes les fonctions de la page d'accueil pour tout afficher, delete une ligne et constuire notre affichage avec les classes tailwind
+
 fetch(url, options)
     .then((res) => {
         if(res.ok) {

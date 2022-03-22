@@ -15,7 +15,7 @@ function post () {
             pays: inputPays.value,
             id: Date.now().toString(),
         };
-
+        //on call la route post avec fetch si dessous
         let options = {
             method: 'POST',
             headers: {
